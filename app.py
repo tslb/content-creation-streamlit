@@ -35,4 +35,4 @@ if st.button("GO"):
         "writing_style": writing_style
     }
     llm_output = openai_llm_client.invoke(llm_family, model, 4000, write_an_llm_article, prompt_args)
-    st.text_area("Article is:",f"{llm_output}", height=200)
+    st.text_area("Article is this:",f"{llm_output}", height=200)
